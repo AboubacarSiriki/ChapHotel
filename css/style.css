@@ -28,6 +28,28 @@ body {
 .text-black {
   color: #000000 !important; }
 
+  .choix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 10px;
+  }
+.choix a{
+  font-size: 15px;
+}
+
+.choix1{
+  margin-bottom: 70px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.choix1 a{
+font-size: 15px;
+}
 a {
   color: #1A374D;
   -webkit-transition: .3s all ease;

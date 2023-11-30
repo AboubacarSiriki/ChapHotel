@@ -30,10 +30,7 @@
 	.intro-wrap {
 		width: 100%;
 	}
-
-	.search {
-		width: 100%;
-	}
+	
 
 	.slides {
 		// width: 500px;
@@ -85,6 +82,12 @@
 
 .untree_co-section {
 	padding: 70px 0;
+}
+
+.choix{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .media-thumb {
