@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Localisation sur Google Maps</title>
+  <style>
+    /* Styling pour la carte */
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Emplacement Exact sur Google Maps</h1>
+  <!-- Div pour afficher la carte -->
+  <div id="map"></div>
+
+  <!-- Chargement de l'API Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API&callback=initMap" async defer></script>
+  
+  <!-- Script JavaScript pour afficher la carte -->
+  <script>
+    // Fonction d'initialisation de la carte
+    function initMap() {
+      // Coordonnées de l'emplacement exact (latitude et longitude)
+      var emplacement = {lat: 48.8566, lng: 2.3522}; // Exemple: Paris, France
+
+      // Création d'une nouvelle carte Google Maps
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15, // Zoom sur la carte
+        center: emplacement // Centre de la carte sur l'emplacement spécifié
+      });
+
+      // Ajout d'un marqueur pour l'emplacement
+      var marker = new google.maps.Marker({
+        position: emplacement,
+        map: map,
+        title: 'Emplacement Exact'
+      });
+    }
+  </script>
+</body>
+</html>
